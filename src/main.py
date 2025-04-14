@@ -31,8 +31,8 @@ sf_modeshapes['Mode_3'] = 5
 sf_modeshapes['Mode_4'] = 5
 
 # viewing angles for each mode shape
-views = {'Mode_1': (11.3, -84.4), 'Mode_2': (11.3, -84.4), 'Mode_3': (11.3, -84.4),
-         'Mode_4': (11.3, -84.4), 'Mode_5': (11.3, -84.4)}
+# views = {'Mode_1': (11.3, -84.4), 'Mode_2': (11.3, -84.4), 'Mode_3': (11.3, -84.4),
+#          'Mode_4': (11.3, -84.4), 'Mode_5': (11.3, -84.4)}
 
 # 2. LOAD DATA
 # A) Geometry data
@@ -123,7 +123,7 @@ for n_mode in range(np.shape(Phi_oma)[1]):
         displaced_nodes[node] = (nodes[node][0] + dx, nodes[node][1] + dy, nodes[node][2] + dz)
 
     fig, ax = outils.plot_structure_modeshape(nodes, lines, color_planes, displaced_nodes=displaced_nodes, plot_undeformed=True)
-    ax.view_init(elev=views[f'Mode_{n_mode + 1}'][0], azim=views[f'Mode_{n_mode + 1}'][1])
+    # ax.view_init(elev=views[f'Mode_{n_mode + 1}'][0], azim=views[f'Mode_{n_mode + 1}'][1])
     plt.draw()
     figname = f'DispMode_{n_mode + 1}.pdf'
     fig.savefig(os.path.join(figpath, figname), dpi=300)
