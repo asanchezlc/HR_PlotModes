@@ -42,13 +42,12 @@ LINES NODE 1 - NODE 2
 SENSORS [ID,DIR (1-x, 2-y, 3-z)]
  
 6
-17   1   0   0
 17   0   1   0
+17   1   0   0
 18   0   1   0
-21   1   0   0
 21   0   1   0
+21   1   0   0
 22   0   1   0
- 
  
 COLOR PLANE
 10 11 20 19
@@ -61,9 +60,6 @@ COLOR PLANE
 20 18 22 24
 18 17 21 22
 
-
- 
- 
 RIGID_PLANES
 18  17  19  20
 22  21  23  24
